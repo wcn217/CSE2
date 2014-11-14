@@ -9,13 +9,21 @@ public class WelcomeClass{
         System.out.println("|-W--C--N--2--1--7-|");
         System.out.println("\\ /\\ /\\ /\\ /\\ /\\ /");
         System.out.println(" v   v   v   v   v   ");
-        Scanner scan = new Scanner(System.in);
-        if (scan.next().charAt(0)!='c'){
-            scan.next();
-            System.out.println("Java is an absolute moron.");
+        
+        for (int i = 6; i>0; i--){
+            for(int k = i-2; k>0; k--){
+                int j = 0;
+                do{
+                    System.out.print(i);
+                    j++;
+                }while(j<k);
+                System.out.println();
+            }
         }
-        else{
-            System.out.println("Java is smart.");
+        int l = 2;
+        while(l>0){
+            System.out.println(l);
+            l--;
         }
     }
 }
